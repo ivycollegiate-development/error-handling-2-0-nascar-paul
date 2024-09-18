@@ -5,7 +5,8 @@ try:
     """
     Anything in this space will not be EXECUTED
     """
-except ValueError:
+except NameError:
     print("This is not a valid response")
-# There is no point in telling someone why something has already failed
+    break  # Exit the program if the response is not valid
+print (f"Your age is ", {age}) # This prints out the return value to the console
 # print("In one year, you will be ", age + 1)
